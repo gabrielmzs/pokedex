@@ -1,0 +1,197 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#pokedex {
+  display: grid;
+  flex-direction: column;
+
+  max-width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+
+  background-color: #313131;
+  background-image: url("https://i.imgur.com/rmgngIu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  overflow: hidden;
+
+  margin: 0;
+}
+
+
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f9f9f9;
+}
+
+
+
+.descricao {
+  font-size: 22px;
+  font-weight: 600;
+  color: #f9f9f9;
+}
+
+.container-formulario {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.pesquisa {
+  outline: none;
+  color: white;
+  border: none;
+
+
+  font-size: 18px;
+  background-color: transparent;
+  padding: 5px;
+
+  position: absolute;
+
+  left: 54%;
+  top: 45%;
+
+}
+
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  outline: 1px solid #ffffff;
+}
+
+.btn-pesquisar {
+  background-color: transparent;
+  display: grid;
+
+  border: none;
+  color: white;
+  font-size: 13px;
+
+  position: absolute;
+
+  top: 70%;
+  left: 53.6%;
+}
+
+.btn-limpar {
+  background-color: transparent;
+
+  border: none;
+  color: white;
+  font-size: 13px;
+
+  position: absolute;
+
+  top: 70%;
+  left: 60.5%;
+}
+
+.card-pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  max-width: 350px;
+  height: 450px;
+
+  background-color: #e1e1e1;
+  color: #313131;
+
+  border-radius: 1rem;
+
+  margin-top: 5%;
+}
+
+.card-pokemon:hover {
+  cursor: pointer;
+  background-color: #3131317a;
+  transform: rotate(360deg);
+  /* Faz uma rotação completa (360 graus) */
+  transform-origin: center;
+  /* Define o ponto de origem da rotação como o centro do elemento */
+  transition: transform 0.8s ease;
+  /* Adiciona uma transição suave para a animação */
+}
+
+#telaPoke {
+
+  width: 17vh;
+  height: 13vh;
+
+  outline: none;
+  position: absolute;
+
+  top: 42.5%;
+  left: 38%;
+  object-fit: contain;
+
+
+
+  visibility: hidden;
+
+
+}
+
+#idPokemon {
+  width: 10px;
+  height: 10px;
+  font-size: 20px;
+  font-weight: bold;
+
+  position: absolute;
+
+  top: 65%;
+  left: 39.5%;
+
+}
+
+.grid-pokemons {
+  display: grid;
+  /* grid-template-columns: repeat(10, 80px); */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+  column-gap: 40px;
+
+  /* position: absolute; */
+  bottom: 0;
+
+
+
+}
+
+.card-pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50%;
+
+  height: 100px;
+  width: 100px;
+
+  background-color: #e1e1e15c;
+  color: #313131;
+
+
+  margin-top: 5%;
+}
+
+#lista {
+  max-width: 100%;
+  height: auto;
+  background-color: #7FAC71;
+}
